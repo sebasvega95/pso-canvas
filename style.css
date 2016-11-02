@@ -29,7 +29,7 @@ canvas {
 .hud {
   padding: 10px 5px 0 5px;
   display: inline-block;
-  color: rgb(13, 132, 201);
+  color: #008CBA;
 }
 
 #solution {
@@ -38,4 +38,6 @@ canvas {
 
 #start {
   margin: 0 20px;
+  background-color: #008CBA;
+  color: white;
 }
