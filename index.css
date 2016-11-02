@@ -1,0 +1,39 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  display: block;
+  width: 80%;
+  /*padding: 10px 10%;*/
+  height: 80%;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#myCanvas {
+  border: 1px solid #D3D3D3;
+  z-index: 1;
+}
+
+#backgroundCanvas {
+  z-index: 0;
+}
+
+.hud {
+  padding: 10px;
+  display: inline-block;
+}
+
+#solution {
+  margin: 20px;
+}
+
+#start {
+  margin: 20px;
+}
