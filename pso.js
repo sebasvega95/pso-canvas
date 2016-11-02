@@ -165,7 +165,7 @@ function animate() {
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   var r = 0.2;
-  
+
   for (var i = 0; i < n; i++) {
     drawInScale(() => {
       ctx.fillStyle = "#EEEEEE";
@@ -176,4 +176,11 @@ function draw() {
   }
 }
 
+function removeButtonFocus() {
+  document.getElementById('start').onmousedown = (e) => {
+    e.preventDefault();
+  };
+}
+
+removeButtonFocus();
 setBackground();
