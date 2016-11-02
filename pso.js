@@ -46,40 +46,6 @@ function drawGrid() {
   }
 }
 
-// Schaffer function
-// function f(x, y) {
-//   return 0.5 - (Math.pow(Math.sin(Math.sqrt(x*x + y*y)), 3) - 0.5) / Math.pow(1 + 0.001 * (x*x + y*y), 2);
-// }
-
-// Shubert function
-// function f(x, y) {
-//   var sum1 = 0, sum2 = 0;
-//   for (var i = 1; i <= 5; i++) {
-//     sum1 += i * Math.cos((i + 1) * x + i);
-//     sum2 += i * Math.cos((i + 1) * y + i);
-//   }
-//   return sum1 * sum2;
-// }
-
-// Hansen function
-// function f(x, y) {
-//   var sum1 = 0, sum2 = 0;
-//   for (var i = 1; i <= 5; i++) {
-//     sum1 += i * Math.cos((i - 1) * x + i);
-//     sum2 += i * Math.cos((i + 1) * y + i);
-//   }
-//   return sum1 * sum2;
-// }
-
-// Camel function
-// function f(x, y) {
-//   return (4 - 2.1*x*x + x*x*x*x/3) * x*x + x*y + (-4 + 4*y*y) * y*y;
-// }
-
-function f(x, y) {
-  return x*x + y*y;
-}
-
 function setBackground() {
   var canvas = document.getElementById('backgroundCanvas');
   var ctx = canvas.getContext('2d');
@@ -198,8 +164,8 @@ function animate() {
 
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  // drawGrid();
   var r = 0.2;
+  
   for (var i = 0; i < n; i++) {
     drawInScale(() => {
       ctx.fillStyle = "#EEEEEE";
